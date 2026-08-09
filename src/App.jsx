@@ -10,7 +10,7 @@ function Loader() {
 }
 
 function Layout({ children, guest = false }) {
-  return <div className="site-shell"><header><Link className="brand" to="/">M <i>♥</i> A</Link>{!guest && <nav><Link to="/">Invitations</Link><Link to="/admin">Host login</Link></nav>}</header>{children}<footer><span>Made with love for Mustafa &amp; Arwa</span><span>Developed by <a href="https://www.azizshahda.com" target="_blank" rel="noreferrer">Aziz Shahdawala</a></span></footer></div>;
+  return <div className={`site-shell${guest?' guest-shell':''}`}>{!guest&&<header><Link className="brand" to="/">M <i>♥</i> A</Link><nav><Link to="/admin">Host login</Link></nav></header>}{children}<footer><span>Made with love for Mustafa &amp; Arwa</span><span>Developed by <a href="https://www.azizshahda.com" target="_blank" rel="noreferrer">Aziz Shahdawala</a></span></footer></div>;
 }
 
 function Home() {
