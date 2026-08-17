@@ -1,7 +1,7 @@
 export const EVENTS = {
   preWedding: {
     id: 'preWedding', slug: 'wedding-festivities', eyebrow: 'An evening of tradition', title: 'Wedding Festivities',
-    date: 'Saturday, 10 October 2026', time: '11:00 AM', venue: 'Faiz-e-Qutbi Hall',
+    date: 'Saturday, 10 October 2026', time: '11:00 AM', venue: 'Faiz-e-Qutbi Hall (Madanpura)',
     address: 'Mumbai', note: 'Mehendi · Katho · Mama Masalo', icon: '✦', theme: 'ivory'
   },
   reception: {
